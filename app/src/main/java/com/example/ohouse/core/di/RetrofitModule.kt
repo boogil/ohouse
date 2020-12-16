@@ -1,7 +1,7 @@
 package com.example.ohouse.core.di
 
 import androidx.multidex.BuildConfig
-import com.gilly.gifsearch.core.functional.Utils.createOkhttpClient
+import com.example.ohouse.core.functional.Utils.createOkhttpClient
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

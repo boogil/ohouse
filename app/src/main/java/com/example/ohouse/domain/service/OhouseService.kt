@@ -1,7 +1,6 @@
 package com.example.ohouse.domain.service
 
-import com.example.ohouse.data.entity.HomeEntity
-import com.example.ohouse.data.entity.SignInEntity
+import com.example.ohouse.data.domain.*
 import com.example.ohouse.domain.api.OhouseApi
 import com.google.gson.JsonObject
 import okhttp3.ResponseBody
@@ -19,9 +18,9 @@ class OhouseService
 
     override fun getHome(): Call<HomeEntity> = ohouseApi.getHome()
 
-    override fun getPhotoFeed(page: String, per: String): Call<ResponseBody> = ohouseApi.getPhotoFeed(page, per)
+    override fun getPhotoFeed(page: String, per: String): Call<PhotoFeedEntity> = ohouseApi.getPhotoFeed(page, per)
 
-    override fun getPhotoDetail(id: String): Call<ResponseBody> = ohouseApi.getPhotoDetail(id)
+    override fun getPhotoDetail(id: String): Call<PhotoDetailEntity> = ohouseApi.getPhotoDetail(id)
 
-    override fun getUserDetail(id: String): Call<ResponseBody> = ohouseApi.getUserDetail(id)
+    override fun getUserDetail(id: String): Call<UserDetailEntity> = ohouseApi.getUserDetail(id)
 }

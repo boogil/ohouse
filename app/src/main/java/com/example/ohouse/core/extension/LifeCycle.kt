@@ -1,4 +1,4 @@
-package com.gilly.gifsearch.core.extension
+package com.example.ohouse.core.extension
 
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.LiveData

@@ -14,4 +14,7 @@ class AndroidApplication : MultiDexApplication() {
         }
     }
 
+    companion object {
+        var LOGGED_IN = false // 로그인 여부 체크 (임시용도)
+    }
 }

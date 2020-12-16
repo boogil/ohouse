@@ -1,8 +1,8 @@
-package com.example.ohouse.data.entity
+package com.example.ohouse.data.domain
 
-import com.example.ohouse.data.Card
-import com.example.ohouse.data.Home
-import com.example.ohouse.data.User
+import com.example.ohouse.data.data.Card
+import com.example.ohouse.data.data.Home
+import com.example.ohouse.data.data.User
 import com.google.gson.annotations.SerializedName
 
 /**

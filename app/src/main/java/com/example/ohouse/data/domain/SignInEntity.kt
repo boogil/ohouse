@@ -1,4 +1,4 @@
-package com.example.ohouse.data.entity
+package com.example.ohouse.data.domain
 
 import com.google.gson.annotations.SerializedName
 

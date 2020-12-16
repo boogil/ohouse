@@ -1,8 +1,8 @@
 package com.example.ohouse.domain.repository.network
 
 import com.example.ohouse.core.exception.Failure
-import com.example.ohouse.data.entity.BaseEntity
-import com.gilly.gifsearch.core.functional.Either
+import com.example.ohouse.data.domain.BaseEntity
+import com.example.ohouse.core.functional.Either
 import io.reactivex.Single
 import retrofit2.Call
 

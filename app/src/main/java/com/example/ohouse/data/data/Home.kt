@@ -1,4 +1,4 @@
-package com.example.ohouse.data
+package com.example.ohouse.data.data
 
 /**
  * 홈 데이터 (Data Layer 계층)

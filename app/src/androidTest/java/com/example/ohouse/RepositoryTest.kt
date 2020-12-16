@@ -1,17 +1,12 @@
 package com.example.ohouse
 
-import android.app.Application
-import androidx.test.ext.junit.runners.AndroidJUnit4
-import androidx.test.runner.AndroidJUnitRunner
-import com.example.ohouse.domain.OhouseRepository
-import dagger.hilt.android.HiltAndroidApp
+import com.example.ohouse.domain.repository.OhouseRepository
 import dagger.hilt.android.testing.HiltAndroidRule
 import dagger.hilt.android.testing.HiltAndroidTest
 import org.junit.After
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
-import org.junit.runner.RunWith
 import javax.inject.Inject
 
 @HiltAndroidTest

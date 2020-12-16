@@ -1,8 +1,9 @@
-package com.gilly.gifsearch.core.extension
+package com.example.ohouse.core.extension
 
 import android.widget.Button
 import android.widget.ImageView
 import androidx.appcompat.widget.LinearLayoutCompat
+import androidx.cardview.widget.CardView
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
@@ -56,6 +57,10 @@ fun ImageView.onThrottleClick(throttleSecond: Long = 1, subscribe: (() -> Unit)?
     .observeOn(io.reactivex.rxjava3.android.schedulers.AndroidSchedulers.mainThread())
     .subscribe { subscribe?.invoke() }
 fun LinearLayoutCompat.onThrottleClick(throttleSecond: Long = 1, subscribe: (() -> Unit)? = null) = clicks()
+    .throttleFirst(throttleSecond, TimeUnit.SECONDS)
+    .observeOn(io.reactivex.rxjava3.android.schedulers.AndroidSchedulers.mainThread())
+    .subscribe { subscribe?.invoke() }
+fun CardView.onThrottleClick(throttleSecond: Long = 1, subscribe: (() -> Unit)? = null) = clicks()
     .throttleFirst(throttleSecond, TimeUnit.SECONDS)
     .observeOn(io.reactivex.rxjava3.android.schedulers.AndroidSchedulers.mainThread())
     .subscribe { subscribe?.invoke() }

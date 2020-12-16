@@ -1,4 +1,4 @@
-package com.gilly.gifsearch.core.functional
+package com.example.ohouse.core.functional
 
 import android.content.Context
 import android.net.ConnectivityManager

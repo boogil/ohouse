@@ -1,8 +1,6 @@
 package com.example.ohouse.domain.api
 
-import android.util.JsonReader
-import com.example.ohouse.data.entity.HomeEntity
-import com.example.ohouse.data.entity.SignInEntity
+import com.example.ohouse.data.domain.*
 import com.google.gson.JsonObject
 import okhttp3.ResponseBody
 import retrofit2.Call
@@ -35,7 +33,7 @@ interface OhouseApi {
     fun getPhotoFeed(
         @Query("page") page: String,
         @Query("per") per: String
-    ): Call<ResponseBody>
+    ): Call<PhotoFeedEntity>
 
     /**
      * 사진상세 데이터 가져오기
@@ -43,7 +41,7 @@ interface OhouseApi {
     @GET("cards/{id}")
     fun getPhotoDetail(
         @Path("id") id: String
-    ): Call<ResponseBody>
+    ): Call<PhotoDetailEntity>
 
     /**
      * 유저상세 데이터 가져오기
@@ -51,6 +49,6 @@ interface OhouseApi {
     @GET("users/{id}")
     fun getUserDetail(
         @Path("id") id: String
-    ): Call<ResponseBody>
+    ): Call<UserDetailEntity>
 
 }

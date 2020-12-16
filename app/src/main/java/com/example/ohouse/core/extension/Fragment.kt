@@ -1,4 +1,4 @@
-package com.gilly.gifsearch.core.extension
+package com.example.ohouse.core.extension
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager

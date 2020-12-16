@@ -1,4 +1,4 @@
-package com.gilly.gifsearch.core.functional
+package com.example.ohouse.core.functional
 
 /**
  * Copyright (C) 2019 Fernando Cejas Open Source Project
